@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Join LunarZeit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="front">
+
+  <main class="front-container">
+    <h1>Join LunarZeit</h1>
+    <p>Create your account. Your data stays with you.</p>
+
+    <form id="joinForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" required />
+
+      <label for="username">Username</label>
+      <input type="text" id="username" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" required />
+
+      <label for="payment">Payment Info</label>
+      <input type="text" id="payment" placeholder="(this will connect to real payments later)" required />
+
+      <button type="submit">Subscribe & Join</button>
+    </form>
+  </main>
+
+  <script>
+    document.getElementById('joinForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert("In real life, this would securely create an account and process payment.");
+      window.location.href = "dashboard.html";
+    });
+  </script>
+</body>
+</html>
